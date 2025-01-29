@@ -8,24 +8,22 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: 'npm'
+      - name: Set up Git
+        run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build project
         run: npm run build
 
       - name: Deploy to GitHub Pages
         run: |
           npm install -g gh-pages
-          gh-pages -d build --repo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          gh-pages -d build --repo "https://github.com/dionisiyKDO/dionisiyKDO.github.io.git"
