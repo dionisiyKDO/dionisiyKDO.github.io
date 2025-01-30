@@ -1,3 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-<footer> Kamiskyi Denys <a href="https://github.com/dionisiyKDO">Github</a></footer>
+<script>
+	import Header from '$lib/Header.svelte';
+	import About from '$lib/About.svelte';
+	import Projects from '$lib/Projects.svelte';
+	import Footer from '$lib/Footer.svelte';
+	import Skills from '$lib/Skills.svelte';
+</script>
+
+<div class="flex min-h-screen flex-col">
+	<Header />
+	<main class="flex-grow p-6">
+		<About />
+		<Projects />
+		<Skills />
+	</main>
+	<Footer />
+</div>
+
+<style>
+</style>
