@@ -1,9 +1,11 @@
 <script>
+	import { base } from '$app/paths';
+
 	let links = [
-		{ name: 'Home', url: '/' },
-		{ name: 'About', url: '/about' },
-		{ name: 'Projects', url: '/projects' },
-		{ name: 'Contact', url: '/contact' }
+		{ name: 'Home', url: base + '' },
+		{ name: 'About', url: base + '/about' },
+		{ name: 'Projects', url: base + '#' },
+		{ name: 'Contact', url: base + '#' }
 	];
 </script>
 
