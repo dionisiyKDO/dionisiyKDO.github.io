@@ -1,1 +1,0 @@
-import{a,t as p}from"../chunks/PvEFh3CK.js";import"../chunks/DLPxFP_0.js";var t=p(`<div class="flex min-h-screen flex-col"><h1>About</h1> <p>Hi, I'm Denys Kaminskyi, a passionate developer. Good to see you here.</p></div>`);function n(e){var o=t();a(e,o)}export{n as component};
