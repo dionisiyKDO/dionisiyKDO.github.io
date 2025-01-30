@@ -1,19 +1,19 @@
 <script>
-	import Header from '$lib/Header.svelte';
-	import About from '$lib/About.svelte';
-	import Projects from '$lib/Projects.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Skills from '$lib/Skills.svelte';
+    import avatar from '$lib/assets/avatar.webp';
 </script>
 
-<div class="flex min-h-screen flex-col">
-	<Header />
-	<main class="flex-grow p-6">
-		<About />
-		<Projects />
-		<Skills />
-	</main>
-	<Footer />
+<div class="container">
+    <div class="avatar-container">
+        <img src={avatar} alt="A beautiful sunset" class="avatar">
+    </div>
+
+
+    {#each [1, 2, 3] as block}
+        <div class="block">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, qui magnam? Fuga, possimus, eveniet quis accusamus quidem praesentium harum ipsam dolor voluptatum voluptate molestiae reiciendis est rem reprehenderit ullam nihil.    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deserunt illo, sequi dignissimos similique tenetur consequatur est harum et incidunt reprehenderit ex omnis doloremque rem voluptates laudantium necessitatibus, fuga corrupti?
+        </div>
+    {/each}
 </div>
 
 <style>

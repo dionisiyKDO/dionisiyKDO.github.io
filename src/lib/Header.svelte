@@ -3,9 +3,9 @@
 
 	let links = [
 		{ name: 'Home', url: base + '' },
-		{ name: 'About', url: base + '/about' },
-		{ name: 'Projects', url: base + '#' },
-		{ name: 'Contact', url: base + '#' }
+		// { name: 'About', url: base + '/about' },
+		// { name: 'Projects', url: base + '#' },
+		// { name: 'Contact', url: base + '#' }
 	];
 </script>
 
