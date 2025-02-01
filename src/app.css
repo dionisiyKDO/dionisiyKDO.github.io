@@ -47,6 +47,12 @@
     --navbar-button-text-hover: rgb(203,123,71);
 }
 
+@layer base {
+    html {
+        scrollbar-gutter: stable; /* Add scroll space to the page*/
+    }
+}
+
 @layer components {
     /* #region avatar */
     .avatar-container {
@@ -95,11 +101,16 @@
         border-2 border-transparent
         text-[--navbar-button-text]
 
-        transition-all duration-100 ease-in-out
-        hover:text-[--navbar-button-text-hover]
+        hover:text-[--navbar-button-text-hover];
         
+        box-shadow: 0 3px 0 var(--navbar-button-background);
+    }
+    .navbar-button:active {
+        box-shadow: none;
+        transform: translateY(3px);
     }
     .navbar-button-selected {
+        box-shadow: 0 3px 0 var(--navbar-button-border);
         @apply
         border-[--navbar-button-border] border-2 border-solid 
     }
