@@ -92,10 +92,12 @@
 		@apply py-2 px-4
         rounded-md
         bg-[--navbar-button-background]
+        border-2 border-transparent
         text-[--navbar-button-text]
 
         transition-all duration-100 ease-in-out
         hover:text-[--navbar-button-text-hover]
+        
     }
     .navbar-button-selected {
         @apply
