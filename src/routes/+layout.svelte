@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import Thing from '$lib/Navbar.svelte';
+	import Navbar from '$lib/Navbar.svelte';
 	import '../app.css';
 	let { children } = $props();
 </script>
@@ -11,7 +11,7 @@
 	<!-- <Header /> -->
 	<main class="flex-grow">
 		{@render children()}
-		<Thing />
+		<Navbar />
 	</main>
 	
 	<!-- <Footer /> -->

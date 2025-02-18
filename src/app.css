@@ -95,11 +95,11 @@
     }
     
     .navbar-button {
-		@apply py-2 px-4
+		@apply py-2 px-4 w-24
         rounded-md
         bg-[--navbar-button-background]
         border-2 border-transparent
-        text-[--navbar-button-text]
+        text-[--navbar-button-text] text-center
 
         hover:text-[--navbar-button-text-hover];
         

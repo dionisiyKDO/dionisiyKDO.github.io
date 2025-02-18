@@ -6,10 +6,9 @@
     <img src={avatar} alt="A beautiful sunset" class="avatar">
 </div>
 
-{#each [1, 2] as block}
-    <div class="block">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, qui magnam? Fuga, possimus, eveniet quis accusamus quidem praesentium harum ipsam dolor voluptatum voluptate molestiae reiciendis est rem reprehenderit ullam nihil.    
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta deserunt illo, sequi dignissimos similique tenetur consequatur est harum et incidunt reprehenderit ex omnis doloremque rem voluptates laudantium necessitatibus, fuga corrupti?
-    </div>
-{/each}
+
+<div class="block pb-2">
+    <p class="text-center text-9xl font-bold">Aboba</p>
+    <p class="text-center font-light" style="font-size: 8px;">WIP</p>
+</div>
 
