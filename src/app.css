@@ -61,7 +61,8 @@
 
     .avatar {
         @apply
-        object-cover w-48 h-full
+        object-cover w-48 h-48
+        bg-[--surface]
         border-2 border-[--avatar-border] border-solid rounded-full
     }
     /* #endregion */
@@ -117,33 +118,3 @@
     /* #endregion */
 }
 
-/* styles.css */
-@layer utilities {
-    .noise-mask {
-        position: relative;
-        isolation: isolate;
-        }
-    
-    .noise-mask::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background-color: transparent;
-        /* You'll need to download and add this image to your project */
-        mask-image: url('src/lib/assets/noisy-background.jpg');
-        mask-size: 128px 128px;
-        opacity: 0.25;
-        -webkit-mask-image: url('src/lib/assets/noisy-background.jpg');
-        -webkit-mask-size: 128px 128px;
-        background-color: rgb(255 255 255 / 0.1);  /* Adjust color/opacity as needed */
-        pointer-events: none;
-        z-index: 10;
-    }
-    .noise {
-        width: 400px;
-        height: 100px;
-        background: linear-gradient(to right, blue, transparent),
-            url(https://grainy-gradients.vercel.app/noise.svg);
-        filter: contrast(170%) brightness(1000%);
-    }
-}

@@ -1,10 +1,10 @@
 <script>
-    import avatar from '$lib/assets/avatar.webp';
+    // import avatar from '$lib/assets/avatar.webp';
 </script>
 
 <div class="container">
     <div class="avatar-container">
-        <img src={avatar} alt="A beautiful sunset" class="avatar">
+        <img src="https://github.com/dionisiyKDO.png" alt="" class="avatar">
     </div>
 
 
